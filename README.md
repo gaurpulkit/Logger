@@ -40,7 +40,7 @@ loggerObject.startDiscordLogger()
 ```
 
 #### Initialize FileLogger
-While the FileLogger is initialized by default. You can still any/all of the parameters.
+While the FileLogger is initialized by default, you can still any/all of the parameters.
 One way to do this is to directly set the values of FileLogger parameters while initializing the logger. Another way to do this is
 ```python
 # Set the values of Telegram Chat ID and Bot API
