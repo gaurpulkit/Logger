@@ -20,7 +20,7 @@ from Logger import logger
 loggerObject = logger.Logger()
 ```
 
-#### Initialize Discord
+#### Initialize Discord Logger (Optional / Only needed to send Discord Logs)
 One way to do this is to directly set the values of DcUrl and DcBotName while initializing the logger. Another way to do this is
 ```python
 # Set the values of Discord Webhook url and Bot Name
@@ -29,7 +29,7 @@ loggerObject.setDiscord(DcUrl = <Channel Webhook>, DcBotName = <Name of the Bot>
 # Start the Discord Logger
 loggerObject.startDiscordLogger()
 ```
-#### Initialize Telegram
+#### Initialize Telegram Logger (Optional / Only needed to send Telegram Logs)
 One way to do this is to directly set the values of TgChatID and TgbotAPI while initializing the logger. Another way to do this is
 ```python
 # Set the values of Telegram Chat ID and Bot API
