@@ -84,14 +84,17 @@ class Logger:
         self.fileLogger = fl.FileLogger(filename=self.LogFolderLocation+'/'+self.LogFileName,
             filemode=self.LogFileMode, format=self.LogFormat, level=self.LogLevel)
 
-    def send(self, message="", discord=False, telegram=False, filelogs=True):
+    def send(self, message="", discord=False, telegram=False, filelogs=True, print=True):
+        # This is used to avoid conflict with the inbuilt function print
+        noPrint = not print
+
         if discord:
             if not self.discordInitialized:
                 raise Exception("Discord Bot Uninitialized")
-            self.discordBot.send(message,noPrint=True)
+            self.discordBot.send(message,noPrint=noPrint)
         if telegram:
             if not self.telegramInitialized:
                 raise Exception("Telegram Bot Uninitialized")
-            self.telegramBot.send(message,noPrint=True)
+            self.telegramBot.send(message,noPrint=noPrint)
         if filelogs:
             self.fileLogger.log(message)
