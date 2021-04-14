@@ -12,7 +12,7 @@ pip install git+git://github.com/Zuj3brusu/Logger.git
 ```
 
 ## Usage
-###Initialization
+### Initialization
 ```python
 from Logger import logger
 
@@ -20,7 +20,7 @@ from Logger import logger
 loggerObject = logger.Logger()
 ```
 
-####Initialize Discord
+#### Initialize Discord Logger (Optional / Only needed to send Discord Logs)
 One way to do this is to directly set the values of DcUrl and DcBotName while initializing the logger. Another way to do this is
 ```python
 # Set the values of Discord Webhook url and Bot Name
@@ -29,7 +29,7 @@ loggerObject.setDiscord(DcUrl = <Channel Webhook>, DcBotName = <Name of the Bot>
 # Start the Discord Logger
 loggerObject.startDiscordLogger()
 ```
-####Initialize Telegram
+#### Initialize Telegram Logger (Optional / Only needed to send Telegram Logs)
 One way to do this is to directly set the values of TgChatID and TgbotAPI while initializing the logger. Another way to do this is
 ```python
 # Set the values of Telegram Chat ID and Bot API
@@ -39,8 +39,8 @@ loggerObject.setTelegram(TgChatID = <Chat ID>, TgbotAPI = <Bot API>)
 loggerObject.startDiscordLogger()
 ```
 
-####Initialize FileLogger
-While the FileLogger is initialized by default. You can still any/all of the parameters.
+#### Initialize FileLogger
+While the FileLogger is initialized by default, you can still any/all of the parameters.
 One way to do this is to directly set the values of FileLogger parameters while initializing the logger. Another way to do this is
 ```python
 # Set the values of Telegram Chat ID and Bot API
@@ -66,4 +66,4 @@ log="Hello World"
 loggerObject.send(log,discord=True,telegram=True,filelogs=True,print=True)
 ```
 
-##Thanks for checking it out!
+## Thanks for checking it out!
