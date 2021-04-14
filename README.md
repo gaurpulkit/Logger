@@ -29,6 +29,8 @@ loggerObject.setDiscord(DcUrl = <Channel Webhook>, DcBotName = <Name of the Bot>
 # Start the Discord Logger
 loggerObject.startDiscordLogger()
 ```
+
+
 #### Initialize Telegram Logger (Optional / Only needed to send Telegram Logs)
 One way to do this is to directly set the values of TgChatID and TgbotAPI while initializing the logger. Another way to do this is
 ```python
@@ -38,6 +40,7 @@ loggerObject.setTelegram(TgChatID = <Chat ID>, TgbotAPI = <Bot API>)
 # Start the Telegram Logger
 loggerObject.startDiscordLogger()
 ```
+
 
 #### Initialize FileLogger
 While the FileLogger is initialized by default, you can still change any/all of the parameters.
@@ -55,6 +58,7 @@ loggerObject.setFileLogger(
 # Start the FileLogger
 loggerObject.startFileLogger()
 ```
+
 
 ### Sending a log
 Logs can be sent using any/all Logger(s). You just need to set the values of parameters to `True` for the Loggers for which you want to send the logs.
