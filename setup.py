@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="Logger-Zuj3brusu",
-    version="1.0.1",
+    version="2.0",
     author="Zuj3brusu",
     description="Create logs on Discord, Telegram or a local file",
     long_description=long_description,
