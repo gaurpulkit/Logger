@@ -62,10 +62,12 @@ loggerObject.startFileLogger()
 
 ### Sending a log
 Logs can be sent using any/all Logger(s). You just need to set the values of parameters to `True` for the Loggers for which you want to send the logs.
+
+`print` Determines whether to print success or error messages.
 ```python
 log="Hello World"
 
-loggerObject.send(log,discord=True,telegram=True,filelogs=True)
+loggerObject.send(log,discord=True,telegram=True,filelogs=True,print=True)
 ```
 
 ## Thanks for checking it out!
